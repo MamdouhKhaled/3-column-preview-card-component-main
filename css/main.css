@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs)*/
+    --Very-light-gray : hsl(0, 0%, 95%); /* (background, headings, buttons)*/
+
+    --font-size : 15px;
+    --font-family-700 : 'Big Shoulders Display', cursive;
+    --font-family-400 : 'Lexend Deca', sans-serif;;
+}
+
+body {
+    font-size: var(--font-size);
+    color: var(--Transparent-white);
+    font-family: var(--font-family-400);
+    background-color: var(--Very-light-gray);
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.main {
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    padding: 3rem;
+}
+.card__title {
+    font-family: var(--font-family-700);
+    text-transform: uppercase;
+}
+.orange{
+    background-color: var(--Bright-orange);
+}
+.dark-cyan{
+    background-color: var(--Dark-cyan);
+}
+.vary-dark-cyan{
+    background-color: var(--Very-dark-cyan);
+}
+
+.btn-orange{
+    color: var(--Bright-orange);
+}
+.btn-dark-cyan{
+    color: var(--Dark-cyan);
+}
+.btn-vary-dark-cyan{
+    color: var(--Very-dark-cyan);
+}
+a.btn {
+    display: inline-block;
+    background-color: var(--Very-light-gray);
+    font-weight: bold;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    border-radius: 5rem;
+}
+
+@media screen and (min-width: 376px) {
+    .main {
+        flex-direction: row;
+    }
+}
